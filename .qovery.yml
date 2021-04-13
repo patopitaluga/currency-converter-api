@@ -1,0 +1,11 @@
+---
+application:
+  name: "currency-converter-api"
+  project: "sdfaszdgzxcgr"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-currency-converter-api"
+  routes:
+  - application_name: "currency-converter-api"
+    paths:
+    - "/*"
