@@ -3,6 +3,8 @@ application:
   name: "currency-converter-api"
   project: "sdfaszdgzxcgr"
   organization: "QoveryCommunity"
+  publicly_accessible: true
+  port: 3000
 routers:
 - name: "main-currency-converter-api"
   routes:
