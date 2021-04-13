@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-form-urlencoded
 app.use(bodyParser.json()); // parse application/json
 
-if (dotenv.parsed.PORT) // to overwrite the real env variables with the ones in .env file.
+if (dotenv.parsed && dotenv.parsed.PORT) // to overwrite the real env variables with the ones in .env file.
   process.env.PORT = dotenv.parsed.PORT;
 
 require('./routes')(app); // {function}
